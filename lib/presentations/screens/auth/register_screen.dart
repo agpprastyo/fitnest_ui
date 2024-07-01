@@ -32,7 +32,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
   bool isCheck = false;
 
-  Key formKey = GlobalKey<FormState>();
+  Key registerFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               sliver: SliverList(
                   delegate: SliverChildListDelegate([
                 Form(
-                    key: formKey,
+                    key: registerFormKey,
                     child: Column(
                       children: [
                         Wrap(

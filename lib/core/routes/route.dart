@@ -3,6 +3,7 @@ import 'package:fitnest_ui/presentations/screens/auth/goal_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:sentry_flutter/sentry_flutter.dart';
 
 import '../../presentations/screens/auth/complete_profile_screen.dart';
 import '../../presentations/screens/auth/login_screen.dart';
@@ -29,10 +30,13 @@ final GlobalKey<NavigatorState> _shellNavigatorKey =
 
 class AppRouter {
   static GoRouter router = GoRouter(
+    observers: [
+      SentryNavigatorObserver(enableAutoTransactions: true),
+    ],
     navigatorKey: _rootNavigatorKey,
     debugLogDiagnostics: true,
     routerNeglect: true,
-    initialLocation: '/home',
+    initialLocation: '/',
     routes: [
       // Onboarding route
       GoRoute(
@@ -103,10 +107,7 @@ class AppRouter {
               name: 'profile', // Add name for profile screen
               pageBuilder: (BuildContext context, GoRouterState state) {
                 return slideTransition(state, child: profileWidget);
-              }
-              // You can add a title for the route if desired:
-              // title: 'Profile',
-              ),
+              }),
         ],
       ),
 
