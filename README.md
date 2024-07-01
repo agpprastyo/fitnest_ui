@@ -11,7 +11,7 @@ The design reference for this project can be found at [Pixeltrue Fitness App UI 
 Here are some screenshots of the current progress:
 - Oboarding
 
-    ![Screenshot 1](screenshot1.png)
+    ![Screenshot 1](https://github.com/agpprastyo/fitnest_ui/blob/87b46ef469058c223403e829e80c2aae168c8e45/screenshot/onboarding.png)
     ![Screenshot 2](screenshot2.png)
 
 ## License
