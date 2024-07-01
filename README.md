@@ -1,16 +1,19 @@
 # fitnest_ui
 
-A new Flutter project.
+This repository is dedicated to slicing design from Figma to Flutter UI.
 
-## Getting Started
+## Design Reference
 
-This project is a starting point for a Flutter application.
+The design reference for this project can be found at [Pixeltrue Fitness App UI Kit](https://www.pixeltrue.com/free-ui-kits/fitness-app-ui-kit).
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Progress
+Here are some screenshots of the current progress:
+- Oboarding
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    ![Screenshot 1](screenshot1.png)
+    ![Screenshot 2](screenshot2.png)
+
+## License
+
+This project is licensed under the terms of the MIT license.

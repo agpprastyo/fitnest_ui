@@ -1,6 +1,8 @@
+import 'package:fitnest_ui/core/routes/routes.dart';
 import 'package:fitnest_ui/core/styles/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/styles/text_styles.dart';
 import '../../components/main_button.dart';
@@ -55,7 +57,7 @@ class GoalScreen extends StatelessWidget {
           type: ButtonType.gradient,
           title: 'Go To Home',
           onPressed: () {
-            // GoRouter.of(context).goNamed(Routes.home);
+            context.pushReplacementNamed(RoutesName.home.name);
           },
         ));
   }
